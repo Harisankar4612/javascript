@@ -5,5 +5,4 @@ function evenorodd(num) {
         return "odd";
     }
 }
-let x = 9;
-console.log("The number is: " + evenorodd(x)); 
+console.log("The number is: " + evenorodd(7)); 

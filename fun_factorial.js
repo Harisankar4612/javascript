@@ -12,5 +12,5 @@ function factorial(num) {
     }
     return result;
 }
-let number = 6;
-console.log("The factorial of " + number + " is: " + factorial(number)); 
+let number=6
+console.log("The factorial of " + number + " is: " + factorial(6)); 
