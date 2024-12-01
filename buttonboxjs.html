@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Box Background Color</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      border: 1px solid #000;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <button id="colorButton">Change Background Color</button>
+
+  <script>
+    const colorButton = document.getElementById('colorButton');
+    const box = document.getElementById('box');
+
+    const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'cyan'];
+
+    colorButton.addEventListener('click', () => {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      box.style.backgroundColor = randomColor;
+    });
+  </script>
+</body>
+</html>
